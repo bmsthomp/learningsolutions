@@ -25,6 +25,7 @@ echo "Connected successfully";
 		$query = "select * from users;";
 		$x= $conn->query($query);
 		echo $x;
+		// this is a comment 
 	?>
 
 </body>
