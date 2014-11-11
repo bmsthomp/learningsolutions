@@ -27,6 +27,7 @@ echo "Connected successfully";
 		
 		echo $x;
 		// this is a comment 
+		//this is another comment 
 	?>
 
 </body>
