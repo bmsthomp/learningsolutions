@@ -14,7 +14,7 @@
 <body>
 <!-- DB set up --> 
 <?php
-
+	echo "<h1>test output</h1>";
 	// connection vars
 	$servername = "localhost";
 	$username = "thomp362_ls";
@@ -25,5 +25,8 @@
 	// Check connection
 	if ($conn->connect_error) {
    		die("Connection failed: " . $conn->connect_error);
+
+	} else {
+		echo "connected";
 	} 
 ?>
