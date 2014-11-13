@@ -14,7 +14,6 @@
 <body>
 <!-- DB set up --> 
 <?php
-	echo "<h1>test output</h1>";
 	// connection vars
 	$servername = "localhost";
 	$username = "thomp362_ls";
