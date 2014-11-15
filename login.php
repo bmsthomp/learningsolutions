@@ -16,11 +16,10 @@
 	$mypassword=$_POST['password']; 
 
 	// To protect MySQL injection (more detail about MySQL injection)
-	$usr = stripslashes($myusername);
-	$pwd = stripslashes($mypassword);
-	$usr = mysql_real_escape_string($myusername);
-	$pwd = mysql_real_escape_string($mypassword);
-	$sql="SELECT * FROM $tbl_name WHERE email='$myusername' and pw=md5('$mypassword')";
+	$usr = mysql_real_escape_string(stripslashes($myusername));
+	$pwd = mysql_real_escape_string(stripslashes($mypassword));
+
+	$sql="SELECT * FROM $tbl_name WHERE email='$usr' and pw=md5('$pwd')";
 	$result=mysql_query($sql);
 
 	// Mysql_num_row is counting table row
@@ -29,8 +28,8 @@
 	// If result matched $myusername and $mypassword, table row must be 1 row
 	if($count==1){
 		// Register $myusername, $mypassword and redirect to file "login_success.php"
-		session_register("$myusername");
-		session_register("$mypassword"); 
+		$_SESSION['username'] = $usr;
+		$_SESSION['password'] = $pwd;
 		header("location:content.php");
 	} else {
 		$_SESSION['errors'] = array("Wrong Username or Password");
