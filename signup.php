@@ -1,4 +1,6 @@
-<?php include 'head.php'; ?>
+<?php
+	session_start(); 
+	require 'head.php'; ?>
 
 
 <form method='POST' action="signup.php">
@@ -7,4 +9,4 @@
 	<input name='email' length='125' type='email' required>
 </form>
 
-<?php include 'footer.php'; ?>
+<?php require 'footer.php'; ?>

@@ -1,4 +1,4 @@
-
+<br>
 <footer>
 	<!-- footer elements go here -->
 	<?php echo "<p>Copyright &copy; 1996-" . date("Y") . " Learning Solutions Inc.</p>"; ?>
