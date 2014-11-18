@@ -13,13 +13,12 @@
 </form>
 
 <?php 
-  echo "<p>";
+  
   if (isset($_SESSION['errors'])) {
     foreach($_SESSION['errors'] as $error){ 
-      echo $error;
+    	echo "<p class='alert alert-danger' role='alert'>$error</p>";
     }
   }
-  echo "</p>";
 ?> 
 
 <?php require 'footer.php'; ?>
