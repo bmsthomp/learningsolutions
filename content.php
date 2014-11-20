@@ -10,7 +10,6 @@
 ?>
 
 <!-- Content goes here -->
-<div class="nav navbar"></div>
 <a href="logout.php">Logout</a>
 
 <?php 

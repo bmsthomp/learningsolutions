@@ -2,7 +2,6 @@
 	session_start(); 
 	require 'head.php';?>
 
-<div class="nav navbar"></div>
 
 <div class="container">
 
