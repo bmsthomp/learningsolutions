@@ -32,6 +32,7 @@
 		$_SESSION['password'] = $pwd;
 		header("location:content.php");
 	} else {
+		$_SESSION['username'] = $usr;
 		$_SESSION['errors'] = array("Wrong Username or Password");
 		header("location:index.php");
 	}
