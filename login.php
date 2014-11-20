@@ -30,8 +30,10 @@
 		// Register $myusername, $mypassword and redirect to file "login_success.php"
 		$_SESSION['username'] = $usr;
 		$_SESSION['password'] = $pwd;
+		$_SESSION['errors'] = false;
 		header("location:content.php");
 	} else {
+		$_SESSION['username'] = $usr;
 		$_SESSION['errors'] = array("Wrong Username or Password");
 		header("location:index.php");
 	}
