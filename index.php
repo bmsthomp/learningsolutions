@@ -1,45 +1,48 @@
-<?php session_start(); ?>
-<?php require 'head.php'; ?>
+<?php session_start(); 
+	require 'head.php'; 
 
-<?php 
 	//check for failed log in
 	if (isset($_SESSION['errors'])) {
 		$error = true; 
 	}
 ?> 
 
-<div class="navbar navbar-default navbar-fixed-top">
-	<div class="container">
-		<div class="navbar-header">Navigation bar</div>		
-	</div>
-</div>
 <div class="jumbotron">
 	<div class="container">
 		<div class="col-lg-8">
-			<h1 class="text-align-right">Learning Solutions Inc.</h1>
+			<h1>Learning Solutions Inc.</h1>
+			<p>teaching kids to be awesome</p>
 		</div>
 		<div class="col-lg-4">
 			<!-- Login Form -->
+			<?php
+				if (!isset($_SESSION['password'])){ ?>
+
 			<form class="form-horizontal" method="POST" action="login.php">
 				<fieldset>
-					<div class="form-group <?php if($error){ echo "has-warning"; }?>">
+					<div class="form-group <?php if($error){ echo "has-error"; }?>">
 						<div class="col-lg-12">
-							<input class="form-control" name="username" required length="50" autofocus type="text" placeholder="Enter Email" value="<?php if(isset($_SESSION['username'])){ echo $_SESSION['username'];}?>">
+							<input class="form-control input-sm" name="username" required length="50" autofocus type="text" placeholder="Enter Email" value="<?php if(isset($_SESSION['username'])){ echo $_SESSION['username'];}?>">
 						</div>
 					</div>
-					<div class="form-group <?php if($error){ echo "has-warning"; }?>">
+					<div class="form-group <?php if($error){ echo "has-error"; }?>">
 						<div class="col-lg-12">
-							<input class="form-control" name="password" required length="50" type="password" placeholder="Enter Password">
+							<input class="form-control input-sm" name="password" required length="50" type="password" placeholder="Enter Password">
 						</div>
 					</div>
 					<div class="form-group">
-						<div class="col-lg-12">
-							<button name="submit" class="btn btn-default" type="submit">Log In</button>
-							<em>Not a member? <a href="signup.php">Sign up</a></em>
+						<div class="col-lg-2">
+							<button name="submit" class="btn btn-default btn-sm" type="submit">Log In</button>
 						</div>
+						<div class="col-lg-10">
+							<em>Not a member? <a href="signup.php">Sign up</a></em>
+						</div>						
 					</div>
 				</fieldset>
 			</form>
+			<?php
+				} 
+			?>
 		</div>
 	</div>
 </div>
@@ -62,9 +65,13 @@
 	</div>
 </div>
 
+<?php
 
+echo '<pre>';
+var_dump($_SESSION);
+echo '</pre>';
 
-
+?>
 
 
 <?php require 'footer.php'; ?>

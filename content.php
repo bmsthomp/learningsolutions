@@ -1,16 +1,16 @@
 <?php 
 	session_start();
 	// if not authenticated go back to index.php
-	if (!$_SESSION['username']){
+	if (!$_SESSION['password']){
+		session_destroy();
 		header("location:index.php");
 	}
 
 	require 'head.php';
-	// this will probably need to be a different header file .. idk yet though
 ?>
 
 <!-- Content goes here -->
-
+<div class="nav navbar"></div>
 <a href="logout.php">Logout</a>
 
 <?php 
