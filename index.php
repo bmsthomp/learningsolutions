@@ -1,7 +1,7 @@
-<?php session_start(); ?>
-<?php require 'head.php'; ?>
-
 <?php 
+	session_start();
+	require 'head.php'; 
+
 	//check for failed log in
 	if (isset($_SESSION['errors'])) {
 		$error = true; 
@@ -61,10 +61,6 @@
 		<p>Doner strip steak corned beef pork chop pork belly picanha chicken prosciutto hamburger fatback. Chuck beef shank meatloaf jowl drumstick spare ribs ground round capicola ham meatball shankle rump alcatra boudin. Tenderloin turducken chicken rump ham, porchetta venison tail sirloin brisket sausage. Ground round porchetta biltong tail tenderloin short ribs, boudin ham hock bacon.</p>
 	</div>
 </div>
-
-
-
-
 
 
 <?php require 'footer.php'; ?>
