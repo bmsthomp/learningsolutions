@@ -1,7 +1,9 @@
 <br>
-<footer>
-	<!-- footer elements go here -->
-	<?php echo "<p>Copyright &copy; 1996-" . date("Y") . " Learning Solutions Inc.</p>"; ?>
+<footer class="container">
+	<div class="col-lg-12">
+		<!-- footer elements go here -->
+		<?php echo "<p class=\"text-center\">Copyright &copy; 1996-" . date("Y") . " Learning Solutions Inc.</p>"; ?>
+	</div>
 </footer>
 
 <!-- javascript libs -->
