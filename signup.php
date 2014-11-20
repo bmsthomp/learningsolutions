@@ -53,14 +53,4 @@
 	</fieldset>
 </form>
 
- <?php if (isset($_SESSION['errors'])) {
-    foreach($_SESSION['errors'] as $error){ 
-    	echo "<p class='alert alert-danger' role='alert'>$error</p>";
-    }
-  }
- ?>
-
-</div>
->>>>>>> origin/Front-end-
-
 <?php require 'footer.php'; ?>
