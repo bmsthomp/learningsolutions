@@ -59,7 +59,7 @@
 	<div class="col-lg-12">
 		<div class="page-header"><div class="row"><div class="col-lg-12"><h1>About Us</h1></div></div></div>
 		<p>
-		Established in 1988 in Milwaukee, WI, we are one of the worldwide leaders in providing  educational books and video games to children and educational services. 
+		Established in 1988 with humble beginnings as a family business in Milwaukee, WI, we are one of the worldwide leaders in providing  educational books and video games to children and educational services. 
 		As well as shipping the products to our customers, we now provide monthly plans that allow them download the directly to their computer. 
 		Customers are our #1 priority, and we are routinely ranked in the top 10 in customer service year after year. 
 		</p>
