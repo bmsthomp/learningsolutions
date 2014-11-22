@@ -53,6 +53,7 @@
 		Welcome to learningsolutions.com! Please log in on the upper right side of the screen to view your dashboard, view, rent, and download our educational media . 
 		If you need to contact us, look to the bottom of this page for contact information.  Thank you and have a great day!
 		</p>
+	</div>
 </div>
 <div class="container">
 	<div class="col-lg-12">
