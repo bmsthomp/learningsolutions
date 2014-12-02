@@ -7,6 +7,9 @@
 	}
 
 	require 'head.php';
+	$filename=$_REQUEST['filename'];
+
+	echo $filename;
 
 ?>
 
