@@ -31,6 +31,7 @@
 
 					<ul class="nav navbar-nav navbar-right">
 						<li><a href="content.php">Content</a></li>
+						<li><a href="account.php">Account</a></li>
 						<li><a href="logout.php">Logout</a></li>
 					</ul>
 			<?php 

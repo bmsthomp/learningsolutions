@@ -34,10 +34,8 @@
 			Reading Material
 			</a>
 			<?php 
-				// loop through all reading items
-				// url should be of the viewer + use GET to pass the filename
 				while($row = mysql_fetch_array($sql_reading)){
-					echo "<a href=\"viewer.php?url=$row[3]\" class=\"list-group-item\">$row[1]</a>";
+					echo "<a href=\"viewer.php?filename=$row[1]&url=$row[3]\" class=\"list-group-item\">$row[1]</a>";
 
 				}
 			?>
