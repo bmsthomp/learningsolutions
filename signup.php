@@ -2,64 +2,82 @@
 	session_start(); 
 	require 'head.php';?>
 
-<div class="nav navbar"></div>
 
 <div class="container">
+	<div class="col-lg-12">
+		<div class="page-header"><div class="row"><div class="col-lg-12"><h1>Create Account</h1></div></div></div>
 
-<h1>Create Account</h1>
-<form method='POST' class="form-horizontal" action="create.php">
-	<fieldset>
-	<div class="form-group">
-		<div class="col-lg-6">
-			<input class="form-control input-sm" name='fname' length='125' type='text' required placeholder="First Name">
-		</div>
-	</div>
-	<div class="form-group">
-		<div class="col-lg-6">
-			<input class="form-control input-sm" name='lname' length='125' type='text' required placeholder="Last Name">
-		</div>
-	</div>
-	<div class="form-group">
-		<div class="col-lg-6">
-			<input class="form-control input-sm" name='email' length='125' type='email' required placeholder="Email">
-		</div>
-	</div>
-	<div class="form-group">
-		<div class="col-lg-6">
-			<input class="form-control input-sm" name='address' length='125' type='text' required placeholder="Shipping Address">
-		</div>
-	</div>
-	<div class="form-group">
-		<div class="col-lg-6">
-			<input class="form-control input-sm" name='city' length='125' type='text' required placeholder='Shipping City'>
-		</div>
-	</div>
-	<div class="form-group">
-		<div class="col-lg-6">
-			<input class="form-control input-sm" name='zip' length='125' type='number' required placeholder='Shipping Zip Code'>
-		</div>
-	</div>
-	<div class="form-group">
-		<div class="col-lg-6">
-			<input class="form-control input-sm" name='baddress' length='125' type='text' required placeholder="Billing Address">
-		</div>
-	</div>
-	<div class="form-group">
-		<div class="col-lg-6">
-			<input class="form-control input-sm" name='password' length='125' type='password' required placeholder="Password">
-		</div>
-	</div>
-	<input type='submit' >
-	</fieldset>
-</form>
+		<form method='POST' class="form-horizontal" action="create.php">
+			<fieldset>
+			<div class="form-group">
+				<div class="col-lg-3"></div>
+				<div class="col-lg-6">
+					<input class="form-control input-sm" name='fname' length='125' type='text' required placeholder="First Name">
+				</div>
+				<div class="col-lg-3"></div>
+			</div>
 
- <?php if (isset($_SESSION['errors'])) {
-    foreach($_SESSION['errors'] as $error){ 
-    	echo "<p class='alert alert-danger' role='alert'>$error</p>";
-    }
-  }
- ?>
-
+			<div class="form-group">
+				<div class="col-lg-3"></div>
+				<div class="col-lg-6">
+					<input class="form-control input-sm" name='lname' length='125' type='text' required placeholder="Last Name">
+				</div>
+				<div class="col-lg-3"></div>
+			</div>
+			
+			<div class="form-group">
+				<div class="col-lg-3"></div>
+				<div class="col-lg-6">
+					<input class="form-control input-sm" name='email' length='125' type='email' required placeholder="Email">
+				</div>
+				<div class="col-lg-3"></div>
+			</div>
+			
+			<div class="form-group">
+				<div class="col-lg-3"></div>
+				<div class="col-lg-6">
+					<input class="form-control input-sm" name='address' length='125' type='text' required placeholder="Shipping Address">
+				</div>
+				<div class="col-lg-3"></div>
+			</div>
+			
+			<div class="form-group">
+				<div class="col-lg-3"></div>
+				<div class="col-lg-6">
+					<input class="form-control input-sm" name='city' length='125' type='text' required placeholder='Shipping City'>
+				</div>
+				<div class="col-lg-3"></div>
+			</div>
+			
+			<div class="form-group">
+				<div class="col-lg-3"></div>
+				<div class="col-lg-6">
+					<input class="form-control input-sm" name='zip' length='125' type='number' required placeholder='Shipping Zip Code'>
+				</div>
+				<div class="col-lg-3"></div>
+			</div>
+			
+			<div class="form-group">
+				<div class="col-lg-3"></div>
+				<div class="col-lg-6">
+					<input class="form-control input-sm" name='baddress' length='125' type='text' required placeholder="Billing Address">
+				</div>
+				<div class="col-lg-3"></div>
+			</div>
+			
+			<div class="form-group">
+				<div class="col-lg-3"></div>
+				<div class="col-lg-6">
+					<input class="form-control input-sm" name='password' length='125' type='password' required placeholder="Password">
+				</div>
+				<div class="col-lg-3"></div>
+			</div>
+			
+			<div class="col-lg-3"></div><input style="margin-left:7px;" type='submit' >
+			</fieldset>
+		</form>
+	</div>
 </div>
+
 
 <?php require 'footer.php'; ?>

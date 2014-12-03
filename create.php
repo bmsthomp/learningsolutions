@@ -48,7 +48,6 @@
 				$_SESSION['username'] = $email;
 				$_SESSION['password'] = $password;
 				header('location:content.php');
-				echo "shit worked";
 			}
 		} else {
 			// this email address is already in use
