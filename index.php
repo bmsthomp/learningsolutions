@@ -49,19 +49,41 @@
 <div class="container">
 	<div class="col-lg-12">
 		<div class="page-header"><div class="row"><div class="col-lg-12"><h1>Welcome</h1></div></div></div>
-		<p>Bacon ipsum dolor amet turkey tri-tip tongue, chuck capicola filet mignon pork belly picanha spare ribs tenderloin brisket meatloaf venison. Ground round meatball t-bone chuck shank flank fatback, pig spare ribs. Tenderloin venison pork chop pork belly alcatra, pork loin ham brisket filet mignon pork sausage picanha fatback porchetta. Tenderloin frankfurter bacon leberkas strip steak swine. Landjaeger ground round venison shoulder pancetta shank leberkas corned beef bacon brisket doner. Ham hock shankle pork belly, ham filet mignon sausage andouille tri-tip tenderloin short loin salami. Pork flank turkey biltong, fatback pig chuck drumstick ball tip sirloin pork belly short ribs.</p>
-		<p>Short loin beef sirloin tri-tip capicola turducken strip steak, spare ribs shoulder. Tongue flank meatloaf chuck drumstick pastrami, leberkas cupim tenderloin pork chop. Tenderloin porchetta pancetta, cow biltong andouille short ribs swine ham hock kevin bacon. Frankfurter salami pastrami ham, sirloin meatloaf kevin boudin short loin ball tip drumstick jowl strip steak.</p>
-		<p>Rump alcatra pork loin jerky ham hock kielbasa bacon boudin porchetta flank cow drumstick tri-tip. Leberkas biltong capicola venison corned beef jowl short loin shankle salami doner frankfurter. Shank chicken pork chop, ham meatball beef ribs turducken andouille short ribs leberkas chuck. Frankfurter swine ribeye t-bone, sausage sirloin meatloaf rump. Bacon leberkas cow drumstick shank, landjaeger chicken doner prosciutto boudin sausage biltong. Shank t-bone ham hamburger.</p>
-		<p>Doner strip steak corned beef pork chop pork belly picanha chicken prosciutto hamburger fatback. Chuck beef shank meatloaf jowl drumstick spare ribs ground round capicola ham meatball shankle rump alcatra boudin. Tenderloin turducken chicken rump ham, porchetta venison tail sirloin brisket sausage. Ground round porchetta biltong tail tenderloin short ribs, boudin ham hock bacon.</p>
+		<p>
+		Welcome to learningsolutions.com! Please log in on the upper right side of the screen to view your dashboard, view, rent, and download our educational media . 
+		If you need to contact us, look to the bottom of this page for contact information.  Thank you and have a great day!
+		</p>
 	</div>
 </div>
 <div class="container">
 	<div class="col-lg-12">
 		<div class="page-header"><div class="row"><div class="col-lg-12"><h1>About Us</h1></div></div></div>
-		<p>Bacon ipsum dolor amet turkey tri-tip tongue, chuck capicola filet mignon pork belly picanha spare ribs tenderloin brisket meatloaf venison. Ground round meatball t-bone chuck shank flank fatback, pig spare ribs. Tenderloin venison pork chop pork belly alcatra, pork loin ham brisket filet mignon pork sausage picanha fatback porchetta. Tenderloin frankfurter bacon leberkas strip steak swine. Landjaeger ground round venison shoulder pancetta shank leberkas corned beef bacon brisket doner. Ham hock shankle pork belly, ham filet mignon sausage andouille tri-tip tenderloin short loin salami. Pork flank turkey biltong, fatback pig chuck drumstick ball tip sirloin pork belly short ribs.</p>
-		<p>Short loin beef sirloin tri-tip capicola turducken strip steak, spare ribs shoulder. Tongue flank meatloaf chuck drumstick pastrami, leberkas cupim tenderloin pork chop. Tenderloin porchetta pancetta, cow biltong andouille short ribs swine ham hock kevin bacon. Frankfurter salami pastrami ham, sirloin meatloaf kevin boudin short loin ball tip drumstick jowl strip steak.</p>
-		<p>Rump alcatra pork loin jerky ham hock kielbasa bacon boudin porchetta flank cow drumstick tri-tip. Leberkas biltong capicola venison corned beef jowl short loin shankle salami doner frankfurter. Shank chicken pork chop, ham meatball beef ribs turducken andouille short ribs leberkas chuck. Frankfurter swine ribeye t-bone, sausage sirloin meatloaf rump. Bacon leberkas cow drumstick shank, landjaeger chicken doner prosciutto boudin sausage biltong. Shank t-bone ham hamburger.</p>
-		<p>Doner strip steak corned beef pork chop pork belly picanha chicken prosciutto hamburger fatback. Chuck beef shank meatloaf jowl drumstick spare ribs ground round capicola ham meatball shankle rump alcatra boudin. Tenderloin turducken chicken rump ham, porchetta venison tail sirloin brisket sausage. Ground round porchetta biltong tail tenderloin short ribs, boudin ham hock bacon.</p>
+		<p>
+		Established in 1988 with humble beginnings as a family business in Milwaukee, WI, we are one of the worldwide leaders in providing  educational books and video games to children and educational services. 
+		As well as shipping the products to our customers, we now provide monthly plans that allow them download the directly to their computer. 
+		Customers are our #1 priority, and we are routinely ranked in the top 10 in customer service year after year. 
+		</p>
+	</div>
+</div>
+<div class="container">
+	<div class="col-lg-12">
+		<div class="page-header"><div class="row"><div class="col-lg-12"><h1>Contact us </h1></div></div></div>
+		<p>Our support staff is standing by 8am to 6pm CST Monday through Friday:</p>
+		
+		<p>
+		Call:
+		1-800-555-9080
+		</p>
+		<p>
+		Email:
+		support@learning solutions.com
+		</p>
+		<p>
+		Our mailing address is:
+		</p>
+		<p>
+		2342 N First St Milwaukee WI, 53222
+		</p>
 	</div>
 </div>
 
