@@ -10,3 +10,10 @@ html, body {
 		display: none;
 	}
 }
+.account_input { 
+	width: 100%;
+}
+.account_name {
+	text-align: left;
+	width: 150px;
+}
