@@ -23,9 +23,9 @@
 		<div class="page-header"><div class="row"><div class="col-lg-12"><h1>Account Management</h1></div></div></div>
 		<?php 
 			if ($_SESSION['errors']){
-				echo "Account could not be updated.";
+				echo "<div class=\"col-xs-12 label label-danger\">Account could not be updated.</div><br>";
 			} else if ($_SESSION['edit']) {
-				echo "Account updated successfully.";
+				echo "<div class=\"col-xs-12 label label-success\">Account updated successfully.</div><br>";
 			}
 
 			unset($_SESSION['errors']);
@@ -60,7 +60,7 @@
 				<div class="input-group account_input">
 	  				<span class="input-group-addon account_name">Billing Address</span>
 	  				<input required name="baddress" type="address" class="form-control" value="<?php echo $row[6]; ?>">
-				</div>
+				</div><br>
 				<input type='submit' >
 			</form>
 		</div>

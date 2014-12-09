@@ -22,7 +22,7 @@
 				<fieldset>
 					<div class="form-group <?php if($error){ echo "has-error"; }?>">
 						<div class="col-lg-12">
-							<input class="form-control input-sm" name="username" required length="50" autofocus type="text" placeholder="Enter Email" value="<?php if(isset($_SESSION['username'])){ echo $_SESSION['username'];}?>">
+							<input class="form-control input-sm" name="username" required length="50" autofocus type="email" placeholder="Enter Email" value="<?php if(isset($_SESSION['username'])){ echo $_SESSION['username'];}?>">
 						</div>
 					</div>
 					<div class="form-group <?php if($error){ echo "has-error"; }?>">
