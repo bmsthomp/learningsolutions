@@ -22,9 +22,7 @@
         </button>
 		<div class="navbar-collapse collapse navbar-responsive-collapse">
 			<ul class="nav navbar-nav">
-				<li><a href="index.php">Home</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Contact</a></li>
+				<li><a href="index.php">Learning Solutions Inc.</a></li>
 			</ul>
 			<?php 
 				if ($_SESSION['password']){ ?>

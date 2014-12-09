@@ -1,15 +1,8 @@
 <?php
 	session_start();
 
-	$host="localhost"; // Host name 
-	$username="thomp362_ls"; // Mysql username 
-	$password="fall2014"; // Mysql password
-	$db_name="thomp362_learningsolutions"; // Database name 
-	$tbl_name="users"; // Table name 
-
-	// Connect to server and select database.
-	mysql_connect("$host", "$username", "$password")or die("cannot connect: " . mysqli_connect_error()); 
-	mysql_select_db("$db_name")or die("cannot select DB");
+	require 'connect.php';
+	$tbl_name = "users";
 
 	// username and password sent from form 
 	$myusername=$_POST['username']; 

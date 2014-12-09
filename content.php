@@ -8,16 +8,9 @@
 
 	require 'head.php';
 
-	// content table query
-	$host="localhost"; // Host name 
-	$username="thomp362_ls"; // Mysql username 
-	$password="fall2014"; // Mysql password
-	$db_name="thomp362_learningsolutions"; // Database name 
-	$tbl_name="content"; // Table name 
+	require 'connect.php';
 
-	mysql_connect("$host", "$username", "$password")or die("cannot connect: " . mysqli_connect_error()); 
-	mysql_select_db("$db_name")or die("cannot select DB");
-
+	$tbl_name = "content";
 	$sql_reading = mysql_query("SELECT * FROM $tbl_name WHERE filetype='pdf'");
 	$sql_games = mysql_query("SELECT * FROM $tbl_name WHERE filetype='game'");
 

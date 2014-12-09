@@ -14,15 +14,7 @@
 	// if there is no value for any input return to signup.php
 	if ($fname and $lname and $email and $address and $city and $zip and $baddress and $password){
 
-		$host="localhost"; // Host name 
-		$username="thomp362_ls"; // Mysql username 
-		$password="fall2014"; // Mysql password
-		$db_name="thomp362_learningsolutions"; // Database name 
-		$tbl_name="users"; // Table name 
-
-		// Connect to server and select database.
-		mysql_connect("$host", "$username", "$password")or die("cannot connect: " . mysqli_connect_error()); 
-		mysql_select_db("$db_name")or die("cannot select DB");
+		require 'connect.php';
 
 		$fname = mysql_real_escape_string(stripslashes($fname));
 		$lname = mysql_real_escape_string(stripslashes($lname));
@@ -33,12 +25,12 @@
 		$baddress = mysql_real_escape_string(stripslashes($baddress));
 		$password = mysql_real_escape_string(stripslashes($password));
 
-		$sql_check = mysql_query("SELECT email FROM users WHERE email = '$email';") or die(mysql_error());
-		if (!$sql_check){ 
+		$sql_check = mysql_query("SELECT email FROM users WHERE email = '$email';");
+		$sql_check = mysql_num_rows($sql_check);
+		if ($sql_check==0){ 
 
 			$sql = "INSERT INTO users (firstname, lastname, email, address, city, zip, b_address, pw) VALUES ('$fname', '$lname', '$email', '$address', '$city', '$zip', '$baddress', MD5('$password'));";
-			$result = mysql_query($sql) or die(mysql_error());
-
+			$result = mysql_query($sql);
 
 			if (!$result){
 				$_SESSION['errors'] = array("Could not create account.");
@@ -50,8 +42,7 @@
 				header('location:content.php');
 			}
 		} else {
-			// this email address is already in use
-			// do something about it!
+			$_SESSION['errors'] = array("There is already an account associated with this email.");
 			header('location:signup.php');
 		}
 

@@ -7,6 +7,13 @@
 	<div class="col-lg-12">
 		<div class="page-header"><div class="row"><div class="col-lg-12"><h1>Create Account</h1></div></div></div>
 
+		<?php 
+			if ($_SESSION['errors']){
+				foreach($_SESSION['errors'] as $error){
+					echo $error;
+				}
+			}
+		?>
 		<form method='POST' class="form-horizontal" action="create.php">
 			<fieldset>
 			<div class="form-group">
@@ -79,5 +86,7 @@
 	</div>
 </div>
 
-
-<?php require 'footer.php'; ?>
+<?php 
+	unset($_SESSION['errors']);
+	require 'footer.php'; 
+?>
