@@ -35,7 +35,7 @@
 			</a>
 			<?php 
 				while($row = mysql_fetch_array($sql_reading)){
-					echo "<a href=\"viewer.php?filename=$row[1]&url=$row[3]\" class=\"list-group-item\">$row[1]</a>";
+					echo "<a href=\"viewer.php?type=$row[2]&filename=$row[1]&url=$row[3]\" class=\"list-group-item\">$row[1]</a>";
 
 				}
 			?>
@@ -48,7 +48,7 @@
 				// loop through all reading items
 				// url should be of the viewer + use GET to pass the filename
 				while($row = mysql_fetch_array($sql_games)){
-					echo "<a href=\"$row[3]\" class=\"list-group-item\">$row[1]</a>";
+					echo "<a href=\"viewer.php?type=$row[2]&filename=$row[1]&url=$row[3]\" class=\"list-group-item\">$row[1]</a>";
 
 				}
 			?>

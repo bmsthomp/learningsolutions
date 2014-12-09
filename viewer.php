@@ -9,6 +9,7 @@
 	require 'head.php';
 	$url=$_REQUEST['url'];
 	$filename=$_REQUEST['filename'];
+	$type=$_REQUEST['type'];
 
 ?>
 
@@ -17,11 +18,17 @@
 	<div class="col-lg-12">
 		<div class="page-header"><div class="row"><div class="col-lg-12"><h1><?php echo $filename; ?></h1></div></div></div>
 		<div class="text-center">
-			<iframe src="http://docs.google.com/gview?url=<?php echo $url; ?>&embedded=true" 
-			style="width:600px; height:700px;" frameborder="0"></iframe>
-		</div>
-		<p class="text-center"><a target="_blank" href="<?php echo $url; ?>"><button>Download file</button></a></p>
-		<p class="text-center"><em>If you would like to view this in your browser, please use a larger viewport.</em>
+			<?php 
+				if ($type=="game"){ echo "<img src=\"$url\">"; }
+				else {
+					echo "<iframe src=\"http://docs.google.com/gview?url=$url&embedded=true\" 
+					style=\"width:600px; height:700px;\" frameborder=\"0\"></iframe>
+					</div>
+					<p class=\"text-center\"><a target=\"_blank\" href=\"$url\"><button>Download file</button></a></p>
+					<p class=\"text-center\"><em>If you would like to view this in your browser, please use a larger viewport.</em>";
+
+				}
+			?>
 	</div>
 </div>
 
